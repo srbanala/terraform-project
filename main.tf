@@ -1,13 +1,13 @@
 terraform {
   required_providers {
-    aws = {
+    aws    = {
       source = "hashicorp/aws"
     }
     random = {
       source = "hashicorp/random"
     }
   }
-
+}
   backend "remote" {
    organization = "Docker-nginx"
     workspaces {
