@@ -16,3 +16,9 @@ terraform {
   required_version = ">=0.14.9"
 }
 
+resource "aws_s3_bucket" "my_bucket" {
+  acl = "public-read"
+  versioning {
+    enabled = true
+  }
+}
