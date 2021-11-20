@@ -16,6 +16,13 @@ terraform {
   required_version = ">=0.14.9"
 }
 
+variable  "aws_region" {
+  description = "AWS region"
+  type        = string
+  default     = "us-east-1"
+}
+
+
 provider "aws" {
   profile = "default"
   region  = var.aws_region
