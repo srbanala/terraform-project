@@ -1,7 +1,7 @@
 terraform {
   required_providers {
-    aws    = {
-      source = "hashicorp/aws"
+     aws ={
+       source = "hashicorp/aws"
     }
     random = {
       source = "hashicorp/random"
@@ -14,4 +14,3 @@ terraform {
       name = "terraform-project"
     }
   }
-
