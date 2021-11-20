@@ -16,10 +16,13 @@ terraform {
   required_version = ">=0.14.9"
 }
 
-
+provier aws {
+  region=us-east-1
+}
 resource "aws_s3_bucket" "my_bucket" {
   acl = "public-read"
-  versioning {
+    versioning {
     enabled = true
   }
+
 }
