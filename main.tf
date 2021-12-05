@@ -22,4 +22,7 @@ resource "aws_s3_bucket" "my_bucket" {
   versioning {
     enabled = true
   }
+  logging {
+    target_bucket = "elasticbeanstalk-us-east-1-298693496319"
+  }
   }
